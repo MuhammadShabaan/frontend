@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  color: white;
+  border-radius: 1rem;
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 100%;
+}
+
+.image {
+  height: 100%;
+  width: 50%;
+  background-color: antiquewhite;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
+
+.info {
+  padding: 0 6rem 0 3rem;
+  color: black;
+  height: 100%;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.category {
+  letter-spacing: 2px;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.info * {
+  margin-top: 1.5rem;
+}
+.info h1 {
+  font-size: 2rem;
+}
+
+.product_desc {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: rgb(180, 181, 183);
+}
+
+.button_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #0000;
+}
+
+.button_div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border-radius: 0.3rem;
+  border-style: none;
+  font-size: large;
+}
+
+.button_div button svg {
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.price_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(42, 102, 42);
+}
+.off {
+  text-decoration: line-through;
+  font-size: 1rem;
+  font-weight: 400;
+  color: lightslategray;
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .main_section {
+    border-radius: 0.5rem;
+    height: 90vh;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image img {
+    display: none;
+  }
+
+  .info {
+    padding: 0rem 3rem 1rem 3rem;
+    color: black;
+    width: 100%;
+  }
+
+  .product_desc {
+    line-height: 1.3rem;
+  }
+
+  .button_div {
+    justify-content: center;
+  }
+
+  .button_div button {
+    padding: 1rem 0rem 1rem 0rem;
+    width: 100%;
+  }
+}
